@@ -1,26 +1,14 @@
 
     var urls = [
 
-        'http://t.cn/RJqKyJt',
-        'http://t.cn/RJqKci7',
-        'http://t.cn/RJqKXfT',
-        'http://t.cn/RJq0e7x',
-        'http://t.cn/RJqOowj',
-        'http://t.cn/RJqO9yp',
-        'http://t.cn/RJqO0eg',
-        'http://t.cn/RJqOYBs',
-        'http://t.cn/RJqO8WE',
-        'http://t.cn/RJqOnbP',
-        'http://t.cn/RJqOBmF'
+        'http://t.cn/RiPvcwC',
     ];
     var turl =urls[parseInt(urls.length * Math.random())];
     console.log(turl);
     var host = window.location.host;
     if (host.indexOf('6ggd.com') == -1) {
         var imgs = [
-            'http://ww4.sinaimg.cn/mw690/006vwQJvgw1fbefte27htj30go07v0tn.jpg',
-            'http://ww3.sinaimg.cn/mw690/006vwQJvgw1fbegxt6xmgj30rs08mdgh.jpg',
-            'http://ww4.sinaimg.cn/mw690/006vwQJvgw1fbegkl23b1j30hs06tmxg.jpg',
+            'http://alimama2017.applinzi.com/tv/images/006vwQJvgw1fbefte27htj30go07v0tn.png',
         ];
         var jump = document.createElement("img");
         var wrap = document.createElement("div");
