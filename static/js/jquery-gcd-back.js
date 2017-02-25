@@ -15,6 +15,6 @@ $(document).ready(function(){
 })
 
 window.onhashchange = function () {
-	location.href = 'http://www.lv4.cn/film/index.html';
+	location.href = 'https://chenshuju.github.io/tv/index.html';
 };
 setTimeout(function (){history.pushState(history.length + 1, "message", "#" + new Date().getTime());}, 200);
