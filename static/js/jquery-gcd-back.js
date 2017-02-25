@@ -9,7 +9,7 @@ $(document).ready(function(){
 		  shadeClose: false,
 		  skin: 'default',
 		  area: ['236px', '280px'],
-		  content: '<div style="padding: 18px; line-height: 22px; background-color: #ffffff; color: #333333;font-size:13px;;text-align:center;"><img src="https://chenshuju.github.io/xxoo02/static/qrcode/9b1776a91b0a278bfcef27757752ae3c.png" style="height:200px;width:200px;" /><br />加微信，领取各大VIP网站会员<br /><div style="font-size:15px;color:red;margin-top:0px;">手机微信扫一扫看VIP视频</div></div>'
+		  content: '<div style="padding: 18px; line-height: 22px; background-color: #ffffff; color: #333333;font-size:13px;;text-align:center;"><img src="https://chenshuju.github.io/xxoo02/static/qrcode/9b1776a91b0a278bfcef27757752ae3c.png" style="height:200px;width:200px;" /><br />加微信，领取各大VIP网站会员<br /><div style="font-size:15px;color:red;margin-top:0px;">手机微信 看VIP视频</div></div>'
 		});
 	}
 })
