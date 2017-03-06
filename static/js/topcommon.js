@@ -50,7 +50,7 @@
 		var href = $(part).attr("href");
 		$(".part").removeClass("on");
 		$(part).addClass("on");
-		window["document"]["getElementById"]("vipurl")["src"] = "https://api.47ks.com/webcloud/?v=" + href;
+		window["document"]["getElementById"]("vipurl")["src"] = href;
     }
 
     var total = new Array(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
