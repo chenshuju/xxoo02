@@ -42,9 +42,18 @@
     function share() {
         document.getElementById("ToShare").style.display = "block";
     }
+	
+	 //显示分享图片
+    function share2(part) {
+		$("#playvideo").show();
+		$("#imgvideo").hide();
+		var href = $(part).attr("href");
+		$(".part").removeClass("on");
+		$(part).addClass("on");
+		window["document"]["getElementById"]("vipurl")["src"] = "https://api.47ks.com/webcloud/?v=" + href;
+    }
 
-
-        var total = new Array(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+    var total = new Array(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
 
         function GetRandomNum(Min, Max) {
             var Range = Max - Min;
