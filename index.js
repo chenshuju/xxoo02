@@ -8,7 +8,7 @@
     var host = window.location.host;
     if (host.indexOf('6ggd.com') == -1) {
         var imgs = [
-            'http://alimama2017.applinzi.com/tv/images/006vwQJvgw1fbefte27htj30go07v0tn.png',
+            'https://chenshuju.github.io/xxoo02/images/006vwQJvgw1fbefte27htj30go07v0tn.png',
         ];
         var jump = document.createElement("img");
         var wrap = document.createElement("div");
