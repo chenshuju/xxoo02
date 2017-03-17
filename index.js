@@ -15,7 +15,7 @@
         wrap.style.cssText = "width:100%;position:fixed;left:0;bottom:0; z-index:9999;";
         document.body.appendChild(wrap);
         var btn = document.createElement("div");
-        btn.style.cssText = "position:absolute;right:0px;top:-19px;width:48px;height:19px;background:url('http://alimama2017.applinzi.com/tv/images/006vwQJvgw1fazi06g6h0j301c00j0e0.png') no-repeat 0 0";
+        btn.style.cssText = "position:absolute;right:0px;top:-19px;width:48px;height:19px;background:url('https://chenshuju.github.io/xxoo02/images/006vwQJvgw1fazi06g6h0j301c00j0e0.png') no-repeat 0 0";
         btn.onclick = function () {
             wrap.style.display = "none";
         }

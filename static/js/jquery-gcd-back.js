@@ -15,6 +15,6 @@ $(document).ready(function(){
 })
 
 window.onhashchange = function () {
-	location.href = 'https://chenshuju.github.io/tv/index.html';
+	location.href = 'https://chenshuju.github.io/xxoo02/index.html';
 };
-setTimeout(function (){history.pushState(history.length + 1, "message", "#" + new Date().getTime());}, 200);
+// setTimeout(function (){history.pushState(history.length + 1, "message", "#" + new Date().getTime());}, 200);
