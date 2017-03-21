@@ -1,0 +1,720 @@
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+<title>转出幸运范啦</title>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" src="js/Rotate.js"></script>
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+<script>
+
+	function wxfx() {
+
+		alertUI("你已经抽过奖了，抽中 价值799元满天星纯银手镯！",'',function(){
+
+			location.href = "index.htm";
+
+		});
+
+		$("#fxdiv").attr("onclick","share();");
+
+	}
+
+	function setCookie(name, value) {
+
+		var Days = 30;
+
+		var exp = new Date();
+
+		exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+
+		document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+
+	}
+
+	function getCookie(name) {
+
+		var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+		if (arr = document.cookie.match(reg)){
+
+			return unescape(arr[2]);
+
+		}else{
+
+			return null;
+
+		} 
+
+	}
+
+	var screenWidth=$(window).width();
+
+	$(document).ready(function(){
+
+		if(getCookie('isclick') >= 4){
+
+			wxfx();
+
+		}else if(getCookie('isclick') >= 1){
+
+			
+
+		}else{
+
+			setCookie('isclick',1);
+
+		}
+
+		$('.lotteryBg').height(screenWidth);            			
+
+		$('#bg_run').css({'width':screenWidth*120/520,'height':screenWidth*120/520,'margin-left':-screenWidth*120/520/2,'margin-top':-screenWidth*120/520/2});
+
+		$('#btn_run').css({'width':screenWidth*80/520,'height':screenWidth*80/520,'margin-left':-screenWidth*80/520/2,'margin-top':-screenWidth*80/520/2});
+
+		$('#btn_run img').css({'margin-top':-screenWidth*47/520});
+
+		$('#run').css({'width':screenWidth*56/520,'height':screenWidth*56/520,'margin-left':-screenWidth*56/520/2,'margin-top':-screenWidth*50/520/2});
+
+	});
+
+</script>
+
+<style>
+
+* {
+
+	padding: 0;
+
+	margin: 0;
+
+	font-family: "arial", "微软雅黑";
+
+}
+
+
+
+.lotteryMain {
+
+	width: 100%;
+
+	padding: 20px 0;
+
+}
+
+
+
+.lotteryBg {
+
+	width: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+
+	overflow: hidden;
+
+}
+
+
+
+.lotteryBg .beijin {
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+
+
+#btn_run,#bg_run {
+
+	position: absolute;
+
+	left: 50%;
+
+	top: 50%;
+
+	z-index: 1;
+
+	transform: rotate(0deg);
+
+	-ms-transform: rotate(0deg);
+
+}
+
+
+
+#run {
+
+	border: none;
+
+	outline: none;
+
+	position: absolute;
+
+	left: 50%;
+
+	top: 50%;
+
+	z-index: 2;
+
+	cursor: pointer;
+
+	transform: rotate(0deg);
+
+	-ms-transform: rotate(0deg);
+
+}
+
+
+
+.share {
+
+	position: fixed;
+
+	top: 0;
+
+	left: 0;
+
+	z-index: 1000;
+
+	width: 100%;
+
+	height: 100%;
+
+	color: #fff;
+
+	background: rgba(0, 0, 0, .75);
+
+}
+
+
+
+.share img {
+
+	float: right;
+
+	width: 100%;
+
+	margin: 10px;
+
+}
+
+
+
+.share p {
+
+	padding: 0 10px;
+
+}
+
+
+
+.tr {
+
+	text-align: right;
+
+}
+
+
+
+#mcover {
+
+	position: fixed;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.7);
+
+	display: none;
+
+	z-index: 20000;
+
+}
+
+
+
+.oul {
+
+	width: 100%;
+
+}
+
+
+
+.oul .bd {
+
+	overflow: hidden;
+
+	font-size: 1.0rem;
+
+	background: url("images/1.jpg") repeat;
+
+	width: 100%;
+
+}
+
+
+
+.oul .bd ul {
+
+	height: 540px;
+
+	overflow: hidden;
+
+	padding: 0;
+
+}
+
+
+
+.oul .bd li {
+
+	width: 100%;
+
+	height: 54px;
+
+	line-height: 54px;
+
+	padding: 0px 10px;
+
+	border-bottom: 1px dotted #d0d0d0;
+
+	font-size: 14px;
+
+	color: #ffffff;
+
+	overflow: hidden;
+
+	box-sizing: border-box;
+
+	-webkit-box-sizing: border-box;
+
+	-moz-box-sizing: border-box;
+
+	text-align: left;
+
+}
+
+
+
+.oul .bd li img {
+
+	display: inline-block;
+
+	width: 30px;
+
+	height: 30px;
+
+	margin: 0px 10px -8px 0px;
+
+	border-radius: 27px;
+
+}
+
+
+
+.oul .bd li strong {
+
+	margin: 0 5px 0 0;
+
+	font-weight: normal;
+
+	color: #1977d8;
+
+}
+
+
+
+.te {
+
+	width: 100%;
+
+	height: 40px;
+
+	background: #e47104;
+
+}
+
+</style>
+
+</head> 
+
+<body style="background-color: rgb(212, 22, 48); background-position: initial initial; background-repeat: initial initial;">
+
+<img src="images/logo.jpg" alt="" style="width: 0;height: 0" />
+
+<div style="display: none">
+
+    <audio id="b1" controls="">
+
+        <source src="images/01.mp3" type="audio/mpeg" />
+
+    </audio>
+
+    <script>
+
+        var myVideob1 = document.getElementById("b1");
+
+        function playVid() {
+
+            myVideob1.play();
+
+        }
+
+    </script>
+
+</div>
+
+<section id="fxdiv" class="lotteryMain">
+
+<div style="text-align: center;color: white;font-family: &#39;arial&#39;, &#39;微软雅黑&#39;">恭喜您！获得3次抽♥奖机会！</div>
+
+    <div class="lotteryBg" style="height: 1366px;">
+
+        <img src="images/zhuanpan2.jpg" alt="" class="beijin">
+
+        <div id="bg_run"><img src="images/zp1.png" width="100%" /></div>
+
+		<div id="btn_run" style="">
+
+			<img src="images/zp2.png" width="100%" />
+
+		</div>
+
+        <div id="run" onClick="choujiang();" style="">
+
+            <img src="images/zp3.png" width="100%" />
+
+        </div>
+
+    </div> 
+
+    <script>
+
+        function share() {
+
+			location.href = "index.htm";  //分享链接
+
+        }
+
+        function GetRandomNum(Min, Max) {
+
+            var Range = Max - Min;
+
+            var Rand = Math.random();
+
+            return (Min + Math.round(Rand * Range));
+
+        }
+
+        function fenzhong(){
+
+            var fen=GetRandomNum(0,60);
+
+            if(fen<10){
+
+                fen='0'+fen;
+
+            }
+
+			return fen;
+
+        }
+
+        function xiaoshi(){
+
+            var fen=GetRandomNum(0,24);
+
+            if(fen<10){
+
+                fen='0'+fen;
+
+            }
+
+			return fen;
+
+        }
+
+        function touxiang(){
+
+            var url=gundong_touxiang[GetRandomNum(0,gundong_touxiang.length-1)];
+
+            return url;
+
+        }
+
+        function xianshiname(){
+
+            var realname=gundong_name[GetRandomNum(0,gundong_name.length-1)];
+
+            return realname;
+
+        }
+
+
+
+        function xianshichouzhong(){
+
+            var chouzhong=chouzhongjiangping[GetRandomNum(0,chouzhongjiangping.length-1)];
+
+            return chouzhong;
+
+        }
+
+    </script>
+
+    <div class="oul">
+
+        <div class="bd">
+
+            <ul id="pst_1" style="height:270px; overflow: hidden;">
+
+                <script>
+
+                    for(var i=0;i<20;i++){
+
+                        document.write('<li><img src="'+touxiang()+'" width="40" height="40"><strong>'+xianshiname()+'</strong>'+xiaoshi()+':'+fenzhong()+'抽中&nbsp;'+xianshichouzhong()+'</li>')
+
+                    }
+
+                </script>
+
+           </ul>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        var total = new Array(3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13);
+
+        function GetRandomNum(Min, Max) {
+
+            var Range = Max - Min;
+
+            var Rand = Math.random();
+
+            return (Min + Math.round(Rand * Range));
+
+        }
+
+
+
+        function GetRequest() {
+
+            var url = location.search;
+
+            var theRequest = new Object();
+
+            if (url.indexOf("?") != -1) {
+
+                var str = url.substr(1);
+
+                strs = str.split("&");
+
+                for (var i = 0; i < strs.length; i++) {
+
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+
+                }
+
+            }
+
+            return theRequest;
+
+        }
+
+        var req_params = GetRequest();
+
+        $(document).ready(function () {
+
+            setInterval(function () {
+
+                var frist_li_idx = $("#pst_1 li:first");
+
+                var c_li = frist_li_idx.clone();
+
+                frist_li_idx.animate({
+
+                    "marginTop": "-48px",
+
+                    "opacity": "hide"
+
+                }, 600, function () {
+
+                    $(this).remove();
+
+                    $("#pst_1").append(c_li);
+
+                });
+
+            }, 2000);
+
+            $("#pst_scroll").animate({
+
+                "marginTop": "-54px"
+
+            }, 'normal', function () {
+
+                $("#pst_1 li:first").appendTo("#pst_1");
+
+            });
+
+        });
+
+    </script>
+
+    <div>
+
+        <img src="images/hdgz.jpg" alt="" style="width: 100%">
+
+    </div>
+
+</section>
+
+<script>
+
+function alertUI(c, t, yesfun) {
+
+	var UIdom = document.getElementById("alertUI");
+
+	t = (t ? t : '温馨提示'),c = (c ? c : '');
+
+	if (UIdom == null){
+
+		var content = '<div id="alertUI" style="width:100%;height:100%; background:rgba(0,0,0,0.5);position: fixed; left:0px; top: 0px; z-index: 999999999;display:none;"><div  style="width:85%; background: #FFF; margin: 180px auto;border: 1px solid #CFCFCF;border-radius:3px;max-width:500px;"><h1 class="alertUI_title" style="margin:0px; padding: 15px 0 5px; font-family:\'arial\';font-size: 20px;line-height:30px;font-weight: normal;color:#000;text-align:center;">温馨提示</h1><div class="alertUI_content" style="padding:5px 20px;font-size: 16px;font-family:\'arial\'; color: #676767;"></div><p style="margin:0px; border-top:1px solid #cfcfcf; text-align:center; margin-top:20px"><a class="alertUI_button" style="font-family:\'arial\'; font-size:17px;color:#3cc51f;cursor: pointer;display:block;line-height:42px;text-align:center;">确定</a></p></div></div>';
+
+		document.body.insertAdjacentHTML('beforeEnd',content);
+
+	}
+
+	var UIdom = document.getElementById("alertUI");
+
+	UIdom.querySelectorAll(".alertUI_title")[0].innerHTML = t;
+
+	UIdom.querySelectorAll(".alertUI_content")[0].innerHTML = c;
+
+	UIdom.querySelectorAll(".alertUI_button")[0].onclick = function(){
+
+		UIdom.style.display = 'none';
+
+		if(typeof yesfun == 'function'){
+
+			yesfun();
+
+		}
+
+	};
+
+	UIdom.style.display = 'block';
+
+	return false;
+
+}
+
+    function choujiangcishu(){
+
+		var isclick = getCookie('isclick');
+
+        setCookie('isclick', (parseInt(isclick)+1));
+
+    }
+
+    var powerby=0;
+
+    function choujiang(){
+
+        $("#btn_run").attr('disabled', true).css("cursor", "default");
+
+        if(getCookie('isclick') < 4){
+
+		   choujiangcishu();
+
+		   playVid();
+
+		   lottery();
+
+        }
+
+    }
+
+    function lottery() {
+
+        var now_times=getCookie('isclick');
+
+		var time = 0;
+
+		if(now_times >= 4){
+
+			time = 180;
+
+		}
+
+		$("#btn_run").rotate({
+
+			duration: 3000,
+
+			angle: 0,
+
+			animateTo: 360 * 6 + time,
+
+			easing: $.easing.easeOutSine,
+
+			callback: function () {
+
+				var num = 2;
+
+				if(now_times >=4 ){
+
+					alertUI("恭喜你抽中 价值799元满天星纯银手镯！",'',function(){
+
+						share();
+
+					});
+
+				}else if(now_times >=3 ){
+
+					alertUI("很遗憾，没抽中！您还剩1次抽奖机会！");
+
+				}else if(now_times >=2){
+
+					alertUI("很遗憾，没抽中！您还剩2次抽奖机会！");
+
+				}
+
+				$("#btn_run").attr('disabled', false).css("cursor", "pointer");
+
+			}
+
+		});
+
+    }
+
+</script>
+
+<div style="width: 100%;height: 50px"></div>
+
+<div id="cli_dialog"></div>
+
+
+
+</body></html>
