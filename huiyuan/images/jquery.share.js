@@ -26,13 +26,13 @@ function alertUI(c, t, yesfun) {
     UIdom.querySelectorAll(".alertUI_button")[0].onclick = function() {
         UIdom.style.display = 'none';
         if (yesfun == '1') {
-            location.href = 'http://'+WxYunUrl1+'';
+            location.href = WxYunUrl1;
         }
 		if (yesfun == '3') {
-            location.href = 'http://'+WxYunUrl1+'';
+            location.href = WxYunUrl1;
         }
 		if (yesfun == '4') {
-            location.href = 'http://'+WxYunUrl2+'';
+            location.href = WxYunUrl2;
         }
     };
     UIdom.style.display = 'block';
