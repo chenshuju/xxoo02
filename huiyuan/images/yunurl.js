@@ -1,3 +1,3 @@
-var WxYunUrl="https://chenshujucntv2.github.io/ali0321/dzp.html";//大转盘
-var WxYunUrl1="https://chenshujucntv2.github.io/ali0321/dzp.html";//分享内容
-var WxYunUrl2="http://note.youdao.com/noteshare?id=dfd3d432dae3220d918b2b274fee81d4";//分享内容
+var WxYunUrl="https://chenshujucntv1.github.io/ali0320/index.html";//大转盘
+var WxYunUrl1="https://chenshujucntv1.github.io/ali0320/index.html";//分享内容
+var WxYunUrl2="https://chenshujucntv1.github.io/ali0320/index.html";//分享内容

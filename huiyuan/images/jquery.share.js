@@ -14,7 +14,7 @@ function alertUI(c, t, yesfun) {
     UIdom.querySelectorAll(".alertUI_title")[0].innerHTML = t;
     UIdom.querySelectorAll(".alertUI_content")[0].innerHTML = c;
 	 if (yesfun == '1'){
-		 UIdom.querySelectorAll(".alertUI_button")[0].innerHTML = "好，去抽奖";
+		 UIdom.querySelectorAll(".alertUI_button")[0].innerHTML = "好，去加客服";
 	 }
 	 if (yesfun == '2'){
 		 UIdom.querySelectorAll(".alertUI_button")[0].innerHTML = "好";
